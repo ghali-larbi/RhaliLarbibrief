@@ -1,0 +1,17 @@
+{
+  "phone": [
+    {
+      "photo": "iphone7.jpg",
+      "nom": "iphone7",
+      "configuration": "64G",
+      "prix": "2000dh",
+      "promotion": "10%"
+    },
+    {
+      "photo": "iphone6.jpg",
+      "nom": "iphone6",
+      "configuration": "64G",
+      "prix": "2000dh",
+      "promotion": "20%"
+    }  ]
+}
