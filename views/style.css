@@ -123,4 +123,17 @@ body{
   #mu-footer .mu-footer-bottom .mu-footer-bottom-area p a {
     color: #fff;
   }
+  #custom-button {
+  
+  color: white;
+  background-color: #009578;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#custom-button:hover {
+  background-color: #00b28f;
+}
+
   

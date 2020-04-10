@@ -37,19 +37,19 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="top-flop-smartphones-faible-das-banner.jpg"  class="d-block w-100" alt="...">
+            <img src="1.jpg"  class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
           </div>
           <div class="carousel-item">
-            <img src="phonedim-compare-phones.jpg"  class="d-block w-100" alt="...">
+            <img src="2.png"  class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
              
             </div>
           </div>
           <div class="carousel-item">
-            <img src="phonedim-promo1-1000px.jpg"  class="d-block w-100" alt="...">
+            <img src="3.jpg"  class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
@@ -103,14 +103,15 @@
                     </div>
                     <div class="modal-body">
                         <form method="POST">
-                            <label >photo</label><input class="form-control" type="text" placeholder="Default input" name="photo" required>
-                        <label >nom phone</label><input class="form-control" type="text" placeholder="Default input" name="nom" required>
+                        
+                      <label >photo</label><input class="form-control" type="text" placeholder="Default input" id="custom-text" name="photo" required> <input type="file" id="real-file" hidden="hidden" /><button type="button" id="custom-button">CHOOSE A FILE</button>
+                       <br> <label >nom phone</label><input class="form-control" type="text" placeholder="Default input" name="nom" required>
                         <label >configuration</label><input class="form-control" type="text" placeholder="Default input" name="configue" required>
                         <label >prix</label><input class="form-control" type="text" placeholder="Default input" name="prix" required>
                         <label >promotion</label><input class="form-control" type="text" placeholder="Default input" name="promotion" required>
                           <div class="col-12 d-flex justify-content-center" style="margin-top: 20px;">
                             <button type="submit" formaction="/addPhone" class="btn btn-md btn-primary">ajouter phone</button>
-                            
+                          
                         </form>
                            </div>
                     </div>
@@ -175,5 +176,24 @@
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script>
+        const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text");
+
+customBtn.addEventListener("click", function() {
+  realFileBtn.click();
+});
+
+realFileBtn.addEventListener("change", function() {
+  if (realFileBtn.value) {
+    customTxt.value = realFileBtn.value.match(
+      /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    )[1];
+  } else {
+    customTxt.innerHTML = "No file chosen, yet.";
+  }
+});
+      </script>
 </body>
 </html>
