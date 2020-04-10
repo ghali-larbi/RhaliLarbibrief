@@ -8,17 +8,10 @@
       "promotion": "10%"
     },
     {
-      "photo": "iphone6.jpg",
-      "nom": "iphone6",
+      "photo": "s10.jpg",
+      "nom": " Sumsung S10",
       "configuration": "64G",
       "prix": "2000dh",
-      "promotion": "20%"
-    },
-    {
-      "photo": "s10.jpg",
-      "nom": "larbi",
-      "configuration": "256G",
-      "prix": "5001dh",
       "promotion": "20%"
     }
   ]

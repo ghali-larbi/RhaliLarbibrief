@@ -1,8 +1,6 @@
 const express=require('express');
-const session=require('express-session');
 const app=express();
 const fs=require('fs');
-var url = require('url');
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
 const adapter = new FileSync('data.json')
