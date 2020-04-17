@@ -4,15 +4,15 @@
       "photo": "iphone7.jpg",
       "nom": "iphone7",
       "configuration": "64G",
-      "prix": "2000dh",
+      "prix": "2001dh",
       "promotion": "10%"
     },
     {
-      "photo": "s10.jpg",
+      "photo": "iphone6.jpg",
       "nom": " Sumsung S10",
-      "configuration": "64G",
-      "prix": "2000dh",
-      "promotion": "20%"
+      "configuration": "210G",
+      "prix": "2300dh",
+      "promotion": "10%"
     }
   ]
 }
