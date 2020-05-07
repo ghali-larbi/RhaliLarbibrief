@@ -1,17 +1,10 @@
 {
   "phone": [
     {
-      "photo": "iphone7.jpg",
+      "photo": "S10.jpg",
       "nom": "iphone7",
       "configuration": "64G",
       "prix": "2001dh",
-      "promotion": "10%"
-    },
-    {
-      "photo": "iphone6.jpg",
-      "nom": " Sumsung S10",
-      "configuration": "210G",
-      "prix": "2300dh",
       "promotion": "10%"
     }
   ]
